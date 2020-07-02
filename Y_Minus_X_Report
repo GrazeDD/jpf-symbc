@@ -1,0 +1,47 @@
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+Test.main()
+
+====================================================== search started: 6/26/20 9:56 PM
+FILESTART
+SIZE: 2
+START
+(declare-fun y_2_SYMINT () Int)
+(declare-fun x_1_SYMINT () Int)
+(assert (>= y_2_SYMINT (- 100)))
+(assert (<= y_2_SYMINT 100))
+(assert (>= x_1_SYMINT (- 100)))
+(assert (<= x_1_SYMINT 100))
+(assert (> (- y_2_SYMINT x_1_SYMINT) 0))
+
+(check-sat)
+END
+START
+(declare-fun y_2_SYMINT () Int)
+(declare-fun x_1_SYMINT () Int)
+(assert (>= y_2_SYMINT (- 100)))
+(assert (<= y_2_SYMINT 100))
+(assert (>= x_1_SYMINT (- 100)))
+(assert (<= x_1_SYMINT 100))
+(assert (<= (- y_2_SYMINT x_1_SYMINT) 0))
+
+(check-sat)
+END
+FILEEND
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:00
+states:             new=3,visited=0,backtracked=3,end=2
+search:             maxDepth=2,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=1
+heap:               new=365,released=20,maxLive=349,gcCycles=3
+instructions:       3271
+max memory:         240MB
+loaded code:        classes=61,methods=1341
+
+====================================================== search finished: 6/26/20 9:56 PM

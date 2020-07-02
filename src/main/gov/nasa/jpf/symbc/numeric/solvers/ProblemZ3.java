@@ -88,6 +88,9 @@ public class ProblemZ3 extends ProblemGeneral {
 	private Solver solver;
 	private Context ctx;
 
+	public Solver getSolver() {
+		return solver;
+	}
 	// Do we use the floating point theory or linear arithmetic over reals
 	private boolean useFpForReals = false;
 

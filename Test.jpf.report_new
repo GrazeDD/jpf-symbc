@@ -1,0 +1,50 @@
+JavaPathfinder core system v8.0 - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+gov.nasa.jpf.symbc.RegressionTest.runTestMethod()
+
+====================================================== search started: 7/1/20 9:04 PM
+FILESTART
+SIZE: 3
+START
+(declare-fun y_2_SYMINT () Int)
+(declare-fun x_1_SYMINT () Int)
+(assert (>= y_2_SYMINT (- 100)))
+(assert (<= y_2_SYMINT 100))
+(assert (> y_2_SYMINT 0))
+(assert (>= x_1_SYMINT (- 100)))
+(assert (<= x_1_SYMINT 100))
+(assert (> x_1_SYMINT y_2_SYMINT))
+
+(check-sat)
+END
+START
+(declare-fun y_2_SYMINT () Int)
+(declare-fun x_1_SYMINT () Int)
+(assert (>= y_2_SYMINT (- 100)))
+(assert (<= y_2_SYMINT 100))
+(assert (<= y_2_SYMINT 0))
+(assert (>= x_1_SYMINT (- 100)))
+(assert (<= x_1_SYMINT 100))
+(assert (> x_1_SYMINT y_2_SYMINT))
+
+(check-sat)
+END
+START
+(declare-fun x_1_SYMINT () Int)
+(declare-fun y_2_SYMINT () Int)
+(assert (>= x_1_SYMINT (- 100)))
+(assert (<= x_1_SYMINT 100))
+(assert (>= y_2_SYMINT (- 100)))
+(assert (<= y_2_SYMINT 100))
+(assert (<= x_1_SYMINT y_2_SYMINT))
+
+(check-sat)
+END
+FILEEND
+
+====================================================== results
+no errors detected
+
+====================================================== search finished: 7/1/20 9:04 PM

@@ -5,10 +5,14 @@ Carson Smith Google Summer of Code 2020 -
 
 Working with JPF/SPF recently, this is where I've ended up. 
 
-Files of note are 
+Files of note are:
+
 PathConditionListener.java
+
 SMTFileProcessor.java
+
 SMTRegressionTester.java
+
 RegressionTest.java - Broken as of now. Changed to SMTRegressionTester in the meantime to acquire functionality elsewhere.
 
 There are a few testing files included on this first commit as well, that are used within the established testers.

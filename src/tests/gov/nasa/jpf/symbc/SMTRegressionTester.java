@@ -9,6 +9,8 @@ import org.junit.Test;
 
 public class SMTRegressionTester {
     
+	//I think this functionality is ensured through IntTest already in JPF lol...
+	
 	@Test
 	public void test_TestdotJPF() {
 		//6-18 - Thought: Find a way to run JPF from here to programmatically make the new file as the tester is about to run.
@@ -19,6 +21,58 @@ public class SMTRegressionTester {
 		//something with a bash script later on.
 		File legacyFile = new File("Test.jpf.report");
 		File newFile = new File("Test.jpf.report_new"); //This is the name that my listener will generate. 
+		SMTFileProcessor proc = new SMTFileProcessor(newFile, legacyFile);
+		boolean result = proc.runProcessor();
+		if(result == true) {
+			return;
+		} else {
+			fail("Test.jpf - Regression Test Failed");
+		}
+	}
+	
+	@Test
+	public void test_int_XMinusY() {
+		File legacyFile = new File("XMinusY.report");
+		File newFile = new File("XMinusY.report_new"); //This is the name that my listener will generate. 
+		SMTFileProcessor proc = new SMTFileProcessor(newFile, legacyFile);
+		boolean result = proc.runProcessor();
+		if(result == true) {
+			return;
+		} else {
+			fail("Test.jpf - Regression Test Failed");
+		}
+	}
+	
+	@Test
+	public void test_int_YMinusX() {
+		File legacyFile = new File("YMinusX.report");
+		File newFile = new File("YMinusX.report_new"); //This is the name that my listener will generate. 
+		SMTFileProcessor proc = new SMTFileProcessor(newFile, legacyFile);
+		boolean result = proc.runProcessor();
+		if(result == true) {
+			return;
+		} else {
+			fail("Test.jpf - Regression Test Failed");
+		}
+	}
+	
+	@Test
+	public void test_real_XMinusY() {
+		File legacyFile = new File("R_XMinusY.report");
+		File newFile = new File("R_XMinusY.report_new"); //This is the name that my listener will generate. 
+		SMTFileProcessor proc = new SMTFileProcessor(newFile, legacyFile);
+		boolean result = proc.runProcessor();
+		if(result == true) {
+			return;
+		} else {
+			fail("Test.jpf - Regression Test Failed");
+		}
+	}
+	
+	@Test
+	public void test_real_YMinusX() {
+		File legacyFile = new File("R_XMinusY.report");
+		File newFile = new File("R_XMinusY.report_new"); //This is the name that my listener will generate. 
 		SMTFileProcessor proc = new SMTFileProcessor(newFile, legacyFile);
 		boolean result = proc.runProcessor();
 		if(result == true) {

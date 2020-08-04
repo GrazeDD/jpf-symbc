@@ -1,7 +1,7 @@
 My Readme
 ------------------------------------------------------------------------------
 
-Carson Smith Google Summer of Code 2020 -
+Carson Smith -
 
 Working with JPF/SPF recently, this is where I've ended up. 
 

@@ -90,7 +90,6 @@ public class SMTFileProcessor {
 	/**
 	 * This functions as an exec call to the Z3 program and gets back the output 
 	 * information about what happened.
-	 * WIP
 	 * @param createdFileName
 	 */
 	private static String runZ3OnFile(String createdFileName) {
@@ -156,7 +155,7 @@ public class SMTFileProcessor {
 	}
 
 	/**
-	 * This method works to combined the information found in the two files together
+	 * This method works to combine the information found in the two files together
 	 * so that Z3 can work to see if the combined results are satisfiable.
 	 * 
 	 * @param info1 - The information in the first file.

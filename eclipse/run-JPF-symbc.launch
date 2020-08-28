@@ -8,7 +8,7 @@
 </listAttribute>
 <booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="false"/>
 <mapAttribute key="org.eclipse.debug.core.environmentVariables">
-<mapEntry key="LD_LIBRARY_PATH" value="/home/carsonsmith/git/jpf-symbc/lib/64bit"/>
+<mapEntry key="LD_LIBRARY_PATH" value="C:\Users\graze\git\jpf-symbc\lib"/>
 </mapAttribute>
 <stringAttribute key="org.eclipse.debug.ui.ATTR_CAPTURE_IN_FILE" value="output"/>
 <listAttribute key="org.eclipse.debug.ui.favoriteGroups">

@@ -1197,4 +1197,9 @@ public class ProblemZ3 extends ProblemGeneral {
         }
     }
 
+    @Override
+	public boolean isNonLinearSolver() {
+		return true; //Returns true as Z3 can solve NonLinearIntegerExpressions
+	}
+
 }
